@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskForge | Smart Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="tag">PRODUCTIVITY SYSTEM</p>
+            <h1>Task<span>Forge.</span></h1>
+            <p class="subtitle">Turn your plans into progress.</p>
+        </header>
+
+        <section class="add-row">
+            <input id="title" type="text" placeholder="What needs to be done?">
+
+            <select id="status">
+                <option value="todo">To Do</option>
+                <option value="in-progress">In Progress</option>
+                <option value="done">Done</option>
+            </select>
+
+            <button id="add">+ Add Task</button>
+        </section>
+
+        <nav id="chips" class="filters">
+            <button class="filter active" data-status="all">All</button>
+            <button class="filter" data-status="todo">To Do</button>
+            <button class="filter" data-status="in-progress">In Progress</button>
+            <button class="filter" data-status="done">Done</button>
+        </nav>
+
+        <section class="task-section">
+            <h2>Your tasks</h2>
+            <ul id="list"></ul>
+            <p id="empty">No tasks yet. Add your first task above.</p>
+        </section>
+
+        <footer>BUILT WITH TYPESCRIPT · DESIGNED FOR PROGRESS</footer>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
